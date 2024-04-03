@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tharun's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Custom styles for the navbar */
+    .navbar {
+        height: 60px; /* Adjust the height as needed */
+        z-index: 1000;
+    }
+
+    .navbar-brand img {
+        max-height: 80px;
+        width: auto;
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+
+    body {
+    background: url('C:\\Users\\TharunKumarRaipalli\\Desktop\\Portfolio\\3d-wave-purple-pattern-design_53876-101086.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Adjust the font family as needed */
+    }
+    
+
+    .card2,
+    .card3,
+    .card4,
+    .card5{
+        height: 400px;
+        width: 350px;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+        box-sizing: border-box;
+        text-size-adjust: auto;
+        background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for the cards */
+        border-radius: 10px;
+        margin-inline: 20px;
+    }
+
+    .cards-wrapper {
+      column-gap: 8px;
+      justify-content:center;
+      gap: 10px;
+    }
+
+    .centered-text-container {
+      background-color: aquamarine;
+      width: 100%;
+      height: fit-content;
+      text-align: center;
+      margin: 100px auto;
+      padding: 5px;
+    }
+
+    .below-text-container{
+      background-color: rgb(30, 133, 99);
+      text-emphasis-color: white;
+      height: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+  
+  .card7 {
+    width: 75px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    box-sizing: border-box;
+    text-size-adjust: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-inline: 20px;
+    border-color: black;
+    flex:auto;
+    height: fit-content; /* Set height to auto to adjust based on content */
+}
+
+  
+  .card7 img {
+    height: fit-content; /* Adjust the percentage as needed */
+    object-fit:fill; /* This property ensures the image covers the entire space */
+    border-radius: 10px; /* Add border-radius to the image */
+}
+
+  
+  .card7 .card-body {
+    text-align: center;
+}
+
+.card6 {
+  width: 75px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    box-sizing: border-box;
+    text-size-adjust: auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-inline: 20px;
+    border-color: black;
+    flex:auto;
+    height: fit-content; /* Set height to auto to adjust based on content */
+}
+
+.card6 img {
+    height: fit-content; /* Adjust the percentage as needed */
+    object-fit:cover; /* This property ensures the image covers the entire space */
+    border-radius: 10px; /* Add border-radius to the image */
+}
+
+.card6 .card-body {
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+
+  .social-icons a {
+    margin: 0 30px; /* Adjust the spacing between icons as needed */
+    font-size: 100px; /* Adjust the font size of icons as needed */
+    color: #333; /* Adjust the color of icons as needed */
+  }
+
+.card6:hover,
+.card7:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover {
+    transform: scale(1.05); /* Increase the size of the card on hover */
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+    box-shadow: 0 4px 8px rgba(245, 171, 171, 0.656); /* Add a subtle box shadow on hover */
+}
+
+.button{
+  background-color: aqua;
+}
+
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+          <a class="navbar-brand" href="#">
+            <img src="C:\Users\TharunKumarRaipalli\Desktop\ARIQT.png" alt="Ariqt" width="50px;" class="rounded-pill">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">My Projects</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+      
+              <!-- Dropdown Toggle -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                  More Links
+                </a>
+
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Link 1</a>
+                  <a class="dropdown-item" href="#">Link 2</a>
+                  <a class="dropdown-item" href="#">Link 3</a>
+                  <a class="dropdown-item" href="#">Link 4</a>
+                  <a class="dropdown-item" href="#">Link 5</a>
+                </div>
+              </li>
+              <!-- End Dropdown Toggle -->
+            </ul>
+          </div>
+        </nav>
+       </div>
+
+    <div class="centered-text-container">
+      <h1 style="text-emphasis-color;">Hi, I'm Tharun</h1>
+      <h4 style="text-align: center;"> Frontend Developer</h4>
+      <button class="btn btn-primary" style="align-items: center;">Get to know more</button>
+    </div>
+
+    <div class="container d-flex" style="justify-content: center; align-items: center;">
+      <img class="text" src="C:\Users\TharunKumarRaipalli\Desktop\Portfolio\hero-devices.svg" alt="no internet" width="50%" align-items="center">
+    
+    </div>
+
+    <div class="container d-flex mt-5" style="justify-content: center; align-items: center;">
+      <p  style="text-align: center; margin-top: 10px; border-radius: 10px; padding-left: 10px; background-color: rgb(229, 246, 255); height:fit-content; width: 1000px; justify-content: center; align-items: center;">
+        <b>Hello, I'm Tharun Kumar Raipalli,</b><br>A seasoned HR professional with 2.8 years of experience. 
+        Despite success in HR, my heart beats for Information Technology and coding.
+        Now, I'm on a transformative journey to become an Angular Developer, eager to contribute my diverse skills to the tech world.<br> <br>
+        <b>Welcome to my online portfolio, where I showcase my journey and coding aspirations.</b>
+    </p>
+  </div>
+    
+    <br>
+    <br>
+
+    <section style="text-align:center"><h4>My Recent Work Experience</h4></section>
+    <div class="container mt-3 d-flex cards-wrapper" style="width: 900px; height: 500px; justify-content: center; align-items: center;">
+      <br>
+      <div class="card6">
+        <img class="card-img-top rounded" src="C:\Users\TharunKumarRaipalli\Desktop\Portfolio\ariqtinternational_logo.jpg" alt="Tekwissen Logo">
+        <div class="card-body">
+          <h2>Tekwissen software Pvt Ltd</h2>
+          <p>Program Coordinator<br>2020 march - 2022 July</p>
+          <button class="btn btn-primary button">To know more</button>
+        </div>
+      </div>
+
+      <div class="card7">
+        <img class="card-img-top rounded" src="C:\Users\TharunKumarRaipalli\Desktop\Portfolio\trans logo@4x 1.png" alt="Tekwissen Logo">
+        <div class="card-body">
+          <h2>Ariqt International</h2>
+          <p>Tallent Acquisition Specialist<br>2022 July - Till now</p>
+          <button class="btn btn-primary">To know more</button>
+        </div>
+      </div>
+
+    </div>
+  
+      <!!! This is for card !!!>
+      <br>
+      <br>
+      <br><br>
+      <br>
+   
+
+      <section style="text-align:center;"><h1>Skills I have accquired</h1></section>
+
+      <div class="container mt-1 d-flex cards-wrapper">
+
+        <div class="card3">
+          <img style="height: 55%;" class="card-img-top rounded" src="C:\Users\TharunKumarRaipalli\Desktop\Portfolio\6016.webp" alt="no internet">
+            <div class="card-body">
+              <h2>Coding skills</h2>
+              <p>HTML,CSS, Bootstrap</p>
+              <p>Javascript</p>
+              <button class="btn btn-primary" style="align-items: center;">Click Here</button>
+            </div>
+        </div>
+
+        <div class="card4">
+          <img style="height: 55%;" class="card-img-top rounded" src="C:\Users\TharunKumarRaipalli\Desktop\Portfolio\Recruitment-thumbnail image - 600x300.webp" alt="no internet">
+            <div class="card-body">
+              <h2>Recruitment</h2>
+              <p>End to end Recruitment</p>
+              <br>
+              <br>
+              <button class="btn btn-primary" style="align-items: center; margin-bottom: 8px;">Click Here</button>
+            </div>
+        </div>
+
+        <div class="card5">
+          <img style="height: 55%;" class="card-img-top rounded" src="C:\Users\TharunKumarRaipalli\Desktop\Portfolio\communication-with-understanding-concept-and-soft-skill-idea.webp" alt="no internet">
+            <div class="card-body">
+              <h2>Soft Skills</h2>
+              <p>Hearing & Listening</p>
+              <br>
+              <br>
+              <button class="btn btn-primary" style="align-items: center;">Click Here</button>
+            </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="container mt-5" style="width: 900px; height: fit-content; background-color: rgb(204, 237, 241); border-radius: 10px;">
+        <div>
+          <h4>HTML</h4>
+        </div>
+        <div class="progress mb-3">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"  style="width: 80%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          <span class="text-uppercase fw-bold"> 80%</span>
+        </div>
+        <br>
+
+        <div>
+          <h4>CSS</h4>
+        </div>
+        <div class="progress mb-3">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 65%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          <span class="text-uppercase fw-bold"> 65%</span>
+        </div>
+        <br>
+
+        <div>
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="progress mb-3">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"  style="width: 80%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          <span class="text-uppercase fw-bold">80%</span>
+        </div>
+        <br>
+
+        <div>
+          <h4>Javascript</h4>
+        </div>
+        <div class="progress mb-3">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 50%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+          <span class="text-uppercase fw-bold">50%</span>
+        </div>
+    
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+    
+
+      <div class="container mt-4" style="width: 700px; height: 500px; background-color: rgba(214, 218, 248, 0.86); border-radius: 10px;">
+        <div class="container d-flex mt-3" style="display: inline; justify-content: center; align-items: center;">
+
+      <h2 style="align-items: center; justify-content: center; text-emphasis-color: white;"> <b>Contact me</b> </h2>
+    </div>
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+          <label for="firstname" class="form-label">First name:</label>
+          <input type="text" class="form-control" id="firstname" placeholder="First name" name="firstname">
+        </div>
+        <div class="mb-3">
+          <label for="lastname" class="form-label">Last name:</label>
+          <input type="text" class="form-control" id="Lastname" placeholder="Last name" name="lastname">
+        </div>
+
+        <div class="mb-3">
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Please enter a valid 10-digit phone number">
+        </div>
+
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="btn btn-primary" style="justify-content: center; align-items: center;">Submit</div>
+      </form>
+    </div>
+
+
+   
+      <div class="container mt-5">
+        <h1 style="text-align: center; text-emphasis-color: rgb(234, 32, 32); font-family: 'Times New Roman', Times, serif;">You can contact me at</h1>
+        <!-- Social media icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/yourfacebookprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/yourinstagramprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yourgithubprofile" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+    </body>
+</html>
+
+
+<div class="container-fluid"></div>
